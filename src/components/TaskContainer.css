@@ -1,0 +1,32 @@
+.TaskContainer {
+    width: 600px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.Task, .AddNewTaskFieldContainer {
+    display: flex;
+    width: 100%;
+}
+
+.Task_completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.AddNewTaskFieldContainer {
+    margin-top: 20px;
+}
+
+.AddNewTaskField {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.ErrorContainer {
+    display: none;
+}
+
+.ErrorContainer_visible {
+    display: block;
+}
