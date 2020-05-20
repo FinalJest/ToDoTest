@@ -11,4 +11,11 @@ describe('getClassNameWithMods', () => {
             active: true
         })).toBe('TestClassName TestClassName_color_red TestClassName_active');
     });
+
+    it('If mod is falsable, ignores it', () => {
+        expect(getClassNameWithMods('TestClassName', {
+            color: 'red',
+            active: false
+        })).toBe('TestClassName TestClassName_color_red');
+    })
 });
